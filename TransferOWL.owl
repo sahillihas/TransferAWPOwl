@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sahil/ontologies/2022/3/untitled-ontology-46"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sahil/ontologies/2022/3/untitled-ontology-46">
+    <Prefix name="" IRI="http://www.semanticweb.org/sahil/ontologies/2022/3/untitled-ontology-46"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TC-Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSentences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesAgent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quant1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quant2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SN1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SN2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WP1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeQuantity"/>
+        <Class IRI="#TC-Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveQuantity"/>
+        <Class IRI="#TC-Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SN"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TC-Quantity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WP"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NegativeQuantity"/>
+        <Class IRI="#PositiveQuantity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#Agent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TC-Quantity"/>
+        <NamedIndividual IRI="#Quant1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TC-Quantity"/>
+        <NamedIndividual IRI="#Quant2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SN"/>
+        <NamedIndividual IRI="#SN1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SN"/>
+        <NamedIndividual IRI="#SN2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WP"/>
+        <NamedIndividual IRI="#WP1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Agent1"/>
+        <NamedIndividual IRI="#Quant1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Agent2"/>
+        <NamedIndividual IRI="#Quant2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <NamedIndividual IRI="#SN1"/>
+        <NamedIndividual IRI="#Agent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <NamedIndividual IRI="#SN1"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <NamedIndividual IRI="#SN2"/>
+        <NamedIndividual IRI="#Agent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <NamedIndividual IRI="#SN2"/>
+        <NamedIndividual IRI="#Agent2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSentences"/>
+        <NamedIndividual IRI="#WP1"/>
+        <NamedIndividual IRI="#SN1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSentences"/>
+        <NamedIndividual IRI="#WP1"/>
+        <NamedIndividual IRI="#SN2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Quant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Quant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Quant2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-2</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSentences"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSentences"/>
+        <Class IRI="#WP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <Class IRI="#SN"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <Class IRI="#TC-Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSentences"/>
+        <Class IRI="#SN"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#TC-Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#subtract">
+                <Variable IRI="#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasQuantity"/>
+                <NamedIndividual IRI="#Agent1"/>
+                <Variable IRI="#q"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#q"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <NamedIndividual IRI="#Quant1"/>
+                <Variable IRI="#s"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
